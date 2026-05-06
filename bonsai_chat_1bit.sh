@@ -93,7 +93,7 @@ export LD_LIBRARY_PATH="$(dirname "$SERVER_BIN"):${LD_LIBRARY_PATH:-}"
 
 "$SERVER_BIN" \
   -m "$MODEL_PATH" \
-  -c 4096 \
+  -c 8192 \
   --host 127.0.0.1 \
   --port 8080 \
   > "$SERVER_LOG" 2>&1 &
